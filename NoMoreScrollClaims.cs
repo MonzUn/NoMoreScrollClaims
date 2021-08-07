@@ -3,6 +3,18 @@ using Eco.Gameplay.Players;
 
 namespace Eco.Mods.TechTree
 {
+    public static class NMSCSettings
+    {
+        // How many claims should be created per craft
+        public const int ClaimAmount = 0;
+    }
+
+    public static class NMSCConstants
+    {
+        // How many claims the game gives by default
+        public const int DefaultClaimAmount = 5;
+    }
+
     public partial class AdvancedBakingSkillScroll : SkillScroll<AdvancedBakingSkill, AdvancedBakingSkillBook>
     {
         public override void OnUsed(Player player, ItemStack itemStack)
@@ -10,7 +22,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if (itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 
@@ -21,7 +33,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if (itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 
@@ -32,7 +44,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if (itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 
@@ -43,7 +55,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if (itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 
@@ -54,7 +66,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if (itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 
@@ -65,7 +77,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if (itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 
@@ -76,7 +88,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if (itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 
@@ -87,7 +99,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if(itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 
@@ -98,7 +110,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if (itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 
@@ -109,7 +121,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if (itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 
@@ -120,7 +132,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if (itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 
@@ -131,7 +143,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if (itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 
@@ -142,7 +154,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if (itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 
@@ -153,7 +165,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if (itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 
@@ -164,7 +176,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if (itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 
@@ -175,7 +187,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if (itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 
@@ -186,7 +198,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if (itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 
@@ -197,7 +209,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if (itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 
@@ -208,7 +220,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if (itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 
@@ -219,7 +231,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if (itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 
@@ -230,7 +242,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if (itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 
@@ -241,7 +253,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if (itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 
@@ -252,7 +264,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if (itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 
@@ -263,7 +275,7 @@ namespace Eco.Mods.TechTree
             int originalStackSize = itemStack.Quantity;
             base.OnUsed(player, itemStack);
             if (itemStack.Quantity < originalStackSize)
-                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(5);
+                player.User.Inventory.TryRemoveItems<PropertyClaimItem>(DefaultClaimAmount - (DefaultClaimAmount - NMSCSettings.ClaimAmount));
         }
     }
 }
